@@ -3,58 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-2</title>
-    <!-- mulish font link -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Travel website </title>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-   <!-- font awsome -->
-    <script src="https://kit.fontawesome.com/e913bdd378.js" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+     <script src="https://kit.fontawesome.com/e913bdd378.js" crossorigin="anonymous"></script>
     <!-- css link -->
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="mulish-font">
-    <header>
-        <!-- navbar start here -->
-         <nav class="navbar display-flex">
-            <div class="nav-title-container display-flex" >
-                <img class="nav-img" src="/images/Group 40071 (2).png" alt="">
+    <!-- header start -->
+     <header>
+        <!-- navbar start -->
+        <nav class="navbar display-flex">
+            <div class="display-flex nav-desk">
+                <img class="nav-logo" src="/images/Group 40071 (2).png" alt="">
                 <h3 class="nav-title">Hero <span id="trabel">Travel</span></h3>
             </div>
-                
             <div>
-                <ul class="display-flex nav-links">
-                    <li class="nav-link"><a href="" class="nav-itee"><span id="home">Home</span></a></li>
-                    <li class="nav-link"><a href="" class="nav-itee">Packages</a></li>
-                    <li class="nav-link"><a href="" class="nav-itee">Testimonial</a></li>
-                    <li class="nav-link"><a href="" class="nav-itee">Blog</a></li>
-                    <li class="nav-link"><a href="" class="nav-itee">Contact</a></li>
+                <ul class="nav-links display-flex">
+                    <li class="nav-link"><a href="#" class="nav-item" id="home">Home</a></li>
+                    <li class="nav-link"><a href="#" class="nav-item">Packages</a></li>
+                    <li class="nav-link"><a href="#" class="nav-item">Testimonial</a></li>
+                    <li class="nav-link"><a href="#" class="nav-item">Blog</a></li>
+                    <li class="nav-link"><a href="#" class="nav-item">Contact</a></li>
                 </ul>
             </div>
-         </nav>
-
-         <!-- banner section added -->
-        <div class="banner display-flex">
-            <div class="banner-container" >
-            
-                <div class="banner-desk">
-                    <h3 class="banner-title">Explore Your Travel</h3>
-                    <p class="banner-paragraph">Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
-                </div>
-
-              <div class="banner-input">
-                <input class="input-type" type="text" placeholder="where go">
-                <input class="input-type" type="text" placeholder="where go">
-                <input class="input-type" type="text" placeholder="where go">
-                <div class="btn-banner">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    Find Now
-                </div>
+            <div class="cart-logo">
+                <i class="fa-solid fa-bars"></i>
             </div>
-           </div>
-        </div>
-    </header>
-    <main></main>
+        </nav>
+        <!-- banner section -->
+       <section class="banner ">
+          <div class="hero-container display-flex">
+            <div class="banner-container">
+                <h3>Explore Your Travel</h3>
+                <p>Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</p>
+            
+                <form action="" class="banner-form">
+                    <input type="text" id="input" placeholder="Where go">
+                     <select name="cars" id="input">
+                        <option value="toyota">When</option>
+                     </select>
+                     <select name="cars" id="input">
+                        <option value="toyota">Select Type</option>
+                     </select>
+                     <button id="input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Find Now
+                     </button>
+                </form>
+            </div>
+          </div>
+       </section>
+
+     </header>
+
+
+
+    <!-- main section start -->
+      <main></main>
+    <!-- footer section start -->
     <footer></footer>
 </body>
 </html>

@@ -1,105 +1,130 @@
-/* mulish font link */
-.mulish-font {
+  /* google font link  */
+.mulish-font{
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
 }
-/* shared styles*/
+/* shared styles */
 .display-flex{
     display: flex;
 }
-/* header style */
-header{
+/* navbar styles */
+.navbar{
     max-width: 1170px;
     margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
 }
-/* navbar styles */
 #trabel{
     color: #FF5400;
-}
-.navbar{
-    justify-content: space-between;
-    align-items: center;
-}
-.nav-title{
-    font-size: 2.25rem;
-    font-weight: 800px;
-}
-.nav-title-container{
-    align-items: center;
-    gap: 20px;
-}
-.nav-link{
-    list-style: none;
-    margin-left: 20px;
-    font-size: 1.125rem;
-    font-weight: 700;
-}
-.nav-itee{
-    text-decoration: none;
-    color: rgba(66, 66, 71, 1);
-}
-.nav-img{
-    width: 50px;
-    height: 56px;
 }
 #home{
     color: #FF5400;
 }
-/* banner section added */
+.nav-logo{
+    width: 3rem;
+    height: 3.4rem;
+}
+.nav-desk{
+    gap: 20px;
+    align-items: center;
+}
+.nav-title{
+    font-size: 2.25rem;
+}
+.nav-link{
+    list-style: none;
+}
+.nav-item{
+    text-decoration: none;
+    margin-right: 20px;
+    color: rgba(66, 66, 71, 1);
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+.cart-logo{
+    display: none;
+    font-size: 1.5rem;
+}
+/* banner styles */
 .banner{
     max-width: 1170px;
-    height: 500px;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/Group\ 13\ \(1\)\ \(1\).png');
-    background-position: center;
+}
+.hero-container{
+    background-image: linear-gradient( rgba(63, 61, 61, 0.5)), url('/images/Group\ 13\ \(1\)\ \(1\).png');
     background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+.banner-container{
+    max-width: 800px;
+
 }
-.banner-paragraph{
-    max-width: 670px;
-}
-.banner-title{
+.banner-container> h3{
+    color: white;
     font-size: 4rem;
     font-weight: 800;
-    color: white;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
-.banner-paragraph{
-    color: white;
+.banner-container>p{
     font-weight: 400;
-    font-size: 0.8rem;
-    margin-top: 50px;
-}
-.banner-container{
-     max-width: 800px;
-    margin: 50px auto; 
-    text-align: center;
-   
-}
-.banner-input{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;   
-    background-color: rgba(150, 144, 144, 0.4);
-    padding: 20px;
-    margin-top: 50px;
-    border-radius: 8px;
-}
-.input-type{
-    padding: 12px ;
-    border-radius: 8px;
-    border: none;
-    width: 130px;
-    font-size: 0.8rem;
-    font-weight: 400;
-}
-.btn-banner{
-    padding: 12px;
-    border-radius: 4px;
-    border: none;
-    background-color: #FF5400;
+    font-size: 1rem;
     color: white;
-    font-size: 0.8rem;
-    width: 130px;
-    font-weight: 400;
+    margin-bottom: 20px;
+}
+.banner-form{
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* #input{
+    flex: 1;
+ padding: 14px 16px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  color: #555;
+  background-color: #ffffff;
+} */
+ .banner-form>input, select, button{
+        flex: 1;
+ padding: 14px 16px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  color: #555;
+  background-color: #ffffff;
+ }
+/* responsive styles */
+@media screen and (max-width: 576px) {
+    .nav-links{
+        display: none;
+    }
+    .cart-logo{
+        display: block;
+    }
+    .banner-form{
+        flex-direction: column;
+
+    }
+    /* #input{
+        flex: none;
+        width: 100%;
+    } */
+     .banner-form>input, select, button{
+        flex: none;
+        width: 100%;
+     }
 }
