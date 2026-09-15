@@ -152,6 +152,7 @@ main>section{
 }
 .popular-tours{
     align-items: center;
+    justify-content: center;
     justify-content: space-between;
 }
 .populer-title{
@@ -316,7 +317,6 @@ main>section{
     margin: 0px;
 }
 #icon{
-    
     color: #FF5400;
 }
 .btn-container{
@@ -330,7 +330,96 @@ main>section{
     font-weight: 500;
     padding: 14px 22px;
 }
+/* get lost styles */
+#bold{
+    font-weight: bold;
+}
+#video{
+    max-width: 610px;
+    min-height: 414px;
+    border-radius: 10px;
+}
+#lost{
+    max-width: 530px;
+}
+/* form section styles */
+.news-letter-container{
+    gap: 30px;
+    align-items: center;
+    margin-top: 100px;
+}
+.news-letter{
+    max-width: 470px;
+    padding: 40px ;
+    border-radius: 10px;
+    border: 2px solid #FF5400 ;
+}
+.news-letter>h3{
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+.news-head{
+    width: 350px;
+    margin-bottom: 40px;
+}
+#b-input{
+    width: 430px;
+    padding: 14px;
+    background-color: #FF5400;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+#f-input{
+    width: 390px;
+    margin-bottom: 16px;
+    padding: 16px 20px;
+    background-color: rgba(19, 19, 24, 0.05);
+    border: none;
+    border-radius: 5px;
+}
+.letter-img{
+    max-width: 672px;
+    min-height: 422px;
+}
+/* footer section start */
+footer{
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(19, 19, 24, 0.05);
+    height:400px;
+}
 
+.footer-head{
+    max-width: 240px;
+    margin: 20px auto;
+    gap: 20px;
+    align-items: center;
+
+}
+.footer-head > img{
+    width: 40px;
+    height: 46.67px;
+}
+.footer-head-title{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.footer-desk{
+    max-width: 755px;
+    margin: 0 auto;
+}
+.footer-icon{
+    margin-top: 40px;
+    font-size: 2rem;
+}
+.hr{
+    
+    max-width: 870px;
+    margin: 50px auto;
+}
 /* responsive styles */
 @media screen and (max-width: 576px) {
     .nav-links{
